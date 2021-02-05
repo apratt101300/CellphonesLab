@@ -72,7 +72,8 @@ class PhoneAssignments():
                     raise PhoneError
                 if not phone.employee_id == employee.id:
                     phone.assign(employee.id)
-                return
+                else:
+                    return None
 
 
     def un_assign(self, phone_id):
